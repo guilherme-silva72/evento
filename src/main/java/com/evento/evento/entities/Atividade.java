@@ -30,7 +30,7 @@ public class Atividade {
     @JoinTable(
             name = "tb_atividade_participante",
             joinColumns = @JoinColumn(name = "atividade_id"),
-            inverseJoinColumns = @JoinColumn(name = "b_id")
+            inverseJoinColumns = @JoinColumn(name = "participante_id")
     )
     private List<Participante> participantes = new ArrayList<>();
 
